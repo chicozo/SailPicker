@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SailPicker</string>
+    <string name="planche">Planche</string>
+    <string name="voile">Voile</string>
+    <string name="conseil">Conseil</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="menu_search">Recherche</string>
+    <string name="menu_refresh">Rafraichir</string>
+    <string name="menu_help">Aide</string>
+    <string name="menu_about">A propos</string>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bois_retro"
+    android:weightSum="1">
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/niveauMenu"
+    android:layout_toStartOf="@+id/niveauMenu"
+    android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/retourMenu"
+            android:layout_toLeftOf="@+id/textView8"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/fleche"
+            android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Formulaire"
+        android:id="@+id/textView8"
+        android:textColor="#ECF0F1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Age"
+        android:id="@+id/ageMenu"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ECF0F1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight=".20"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/drop" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Niveau"
+        android:id="@+id/niveauMenu"
+        android:layout_below="@+id/ageMenu"
+        android:textColor="#ECF0F1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight=".20"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/drop" />
+
+    </RelativeLayout>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Support"
+    android:id="@+id/supportMenu"
+    android:textColor="#ECF0F1"
+    android:layout_centerVertical="true"
+    android:layout_alignRight="@+id/niveauMenu"
+    android:layout_alignEnd="@+id/niveauMenu"
+    android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight=".20"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/drop" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Poids"
+        android:id="@+id/poidsMenu"
+        android:textColor="#ECF0F1"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/niveauMenu"
+        android:layout_alignEnd="@+id/niveauMenu"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight=".20"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/drop" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Confirmer"
+        android:id="@+id/confirmerStagiaire"
+        android:textColor="#ECF0F1"
+        android:background="#2980B9"
+        android:layout_gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.29" />
+</LinearLayout>

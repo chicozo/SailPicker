@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/tarifs"
+            android:icon="@mipmap/icone_sail_picker"
+            android:title="tarifs" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_action_about"
+            android:title="a propos" />
+        <item
+            android:id="@+id/inscription"
+            android:icon="@drawable/ic_action_settings"
+            android:title="inscriptions" />
+
+        <item
+            android:id="@+id/navigation_subheader"
+            android:title="Stagiaires">
+            <menu>
+                <item
+                    android:id="@+id/navigation_sub_item_1"
+                    android:icon="@drawable/ic_action_about"
+                    android:title="Stagiaires planche" />
+                <item
+                    android:id="@+id/navigation_sub_item_2"
+                    android:icon="@mipmap/icone_sail_picker"
+                    android:title="Nouveaux stagiaires" />
+            </menu>
+        </item>
+    </group>
+</menu>

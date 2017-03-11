@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edPosition="1"
+    app:edMenuSize="260dp"
+    app:edMenuBackground="#dddddd">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="210dp"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/fondsbois"
+    >
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bton"
+        android:id="@+id/NavButton" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SailPicker"
+        android:textSize="110dp"
+        android:id="@+id/title"
+        android:textColor="#ECF0F1"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+<RelativeLayout
+    android:layout_width="225dp"
+    android:layout_height="255dp"
+    android:layout_below="@+id/title"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="38dp"
+    android:background="#FFFF">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player"
+        android:layout_width="215dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+ />
+
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_weight="0.55"
+        android:layout_marginLeft="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_gravity="bottom"
+        android:background="#FFFF">
+    <WebView
+        android:id="@+id/webView"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="En ce moment!"
+            android:textSize="40dp"
+            android:id="@+id/textView1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/webView"
+            android:layout_alignStart="@+id/webView" />
+
+
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bandeau"
+        android:padding="16dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SailPicker"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/sun"
+            android:id="@+id/animsun"/>
+    </RelativeLayout>
+
+ <ListView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/vue"/>
+</LinearLayout>
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondplanche"
+    tools:context=".MenuPlanche"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="#ECF0F1"
+        android:backgroundTint="#ECF0F1"
+        android:id="@+id/ageMenu"
+        android:layout_below="@+id/retourMenu"
+        android:text="5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/niveau"
+        android:layout_below="@+id/ageMenu"
+        android:layout_alignRight="@+id/ageMenu"
+        android:textColor="#ECF0F1"
+        android:backgroundTint="#ECF0F1"
+        android:layout_alignEnd="@+id/ageMenu"
+        android:text="6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/poids"
+        android:layout_below="@+id/niveau"
+        android:textColor="#ECF0F1"
+        android:backgroundTint="#ECF0F1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmer"
+        android:id="@+id/confirmer"
+        android:textColor="#ECF0F1"
+        android:background="#2980B9"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Age"
+        android:id="@+id/textView"
+        android:textColor="#ECF0F1"
+        android:layout_alignTop="@+id/ageMenu"
+        android:layout_toRightOf="@+id/ageMenu"
+        android:layout_toEndOf="@+id/ageMenu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Niveau"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/ageMenu"
+        android:textColor="#ECF0F1"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Poids"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/niveau"
+        android:textColor="#ECF0F1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/taille"
+        android:textColor="#ECF0F1"
+        android:backgroundTint="#ECF0F1"
+        android:layout_below="@+id/poids"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="160" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Taille"
+        android:id="@+id/TextView4"
+        android:textColor="#ECF0F1"
+        android:layout_below="@+id/poids"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/fleche"
+        android:id="@+id/retourMenu"
+        android:textColor="#ECF0F1"
+    />
+
+</RelativeLayout>
