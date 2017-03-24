@@ -1,4 +1,4 @@
-package doran.sailpicker;
+package doran.sailpicker.meteo;
 
 import android.util.Log;
 

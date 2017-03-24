@@ -18,28 +18,45 @@
     android:weightSum="1"
     android:background="@drawable/fondsbois"
     >
-    <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@drawable/bton"
-        android:id="@+id/NavButton" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="SailPicker"
-        android:textSize="110dp"
-        android:id="@+id/title"
-        android:textColor="#ECF0F1"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF0000"
+        android:id="@+id/appbarlayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#FF0000"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/ic_reorder_black_24dp"
+            android:id="@+id/NavButton" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SailPicker"
+            android:textSize="?attr/actionBarSize"
+            android:id="@+id/title"
+            android:textColor="#ECF0F1"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+
 
 
 <RelativeLayout
     android:layout_width="225dp"
     android:layout_height="255dp"
-    android:layout_below="@+id/title"
+    android:layout_below="@+id/appbarlayout"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
     android:layout_marginTop="38dp"
@@ -54,7 +71,16 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
  />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="La video du moment"
+        android:textSize="40dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/youtube_player"
+        android:layout_alignStart="@+id/youtube_player" />
 </RelativeLayout>
 <LinearLayout
     android:layout_width="match_parent"

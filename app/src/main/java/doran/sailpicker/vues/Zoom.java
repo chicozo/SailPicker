@@ -1,10 +1,12 @@
-package doran.sailpicker;
+package doran.sailpicker.vues;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+
+import doran.sailpicker.R;
 
 /**
  * Created by doran on 25/01/2017.

@@ -1,4 +1,4 @@
-package doran.sailpicker;
+package doran.sailpicker.meteo;
 
 /**
  * Created by doran on 29/01/2017.

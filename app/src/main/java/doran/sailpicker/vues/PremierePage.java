@@ -1,21 +1,11 @@
-package doran.sailpicker;
+package doran.sailpicker.vues;
 
 
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
-import android.view.ContextMenu;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 
 import android.view.animation.Animation;
@@ -24,7 +14,6 @@ import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -36,8 +25,10 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
-import com.mxn.soul.flowingdrawer_core.FlowingMenuLayout;
-import android.view.Menu;
+
+import doran.sailpicker.R;
+import doran.sailpicker.youtube.YouSail;
+
 /**
  * Created by doran on 07/02/2017.
  */
@@ -47,6 +38,7 @@ public class PremierePage extends YouTubeBaseActivity implements YouTubePlayer.O
     WebView webView;
     TextView titre;
     TextView txt1;
+    TextView txt2;
     ImageView animationTarget;
     Button navButt;
     FlowingDrawer dr;
@@ -57,11 +49,12 @@ public class PremierePage extends YouTubeBaseActivity implements YouTubePlayer.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
 
-        String menu[]={"Tarifs","A propos","Inscription","Nouveaux stagiaires","Stagiaires planche"};
+        String menu[]={"Tarifs","A propos","Inscription","Nouveaux stagiaires","Stagiaires planche","YouSail"};
         animationTarget = (ImageView) this.findViewById(R.id.animsun);
         listvue=(ListView)findViewById(R.id.vue);
         dr=(FlowingDrawer)findViewById(R.id.drawerlayout);
         txt1=(TextView)findViewById(R.id.textView1);
+        txt2=(TextView)findViewById(R.id.textView2);
         titre=(TextView)findViewById(R.id.title);
         navButt=(Button)findViewById(R.id.NavButton);
         //mise en place des choses dans les layouts
@@ -75,6 +68,7 @@ public class PremierePage extends YouTubeBaseActivity implements YouTubePlayer.O
         //police d'ecritures
         setFont(titre,"Amontillados.ttf");
         setFont(txt1,"Amontillados.ttf");
+        setFont(txt2,"Amontillados.ttf");
         //animation du soleil
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.rotate_around_center_point);
         animationTarget.startAnimation(animation);
@@ -108,6 +102,11 @@ public class PremierePage extends YouTubeBaseActivity implements YouTubePlayer.O
                                                         break;
                                                     case 4:
                                                         intent= new Intent(PremierePage.this,MenuPlanche.class);
+                                                        finish();
+                                                        startActivity(intent);
+                                                        break;
+                                                    case 5:
+                                                        intent= new Intent(PremierePage.this,YouSail.class);
                                                         finish();
                                                         startActivity(intent);
                                                         break;

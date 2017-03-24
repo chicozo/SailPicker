@@ -1,4 +1,4 @@
-package doran.sailpicker;
+package doran.sailpicker.analyse;
 
 /**
  * Created by doran on 28/02/2017.

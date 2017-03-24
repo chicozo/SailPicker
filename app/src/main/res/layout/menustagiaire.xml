@@ -13,13 +13,13 @@
     android:layout_alignParentTop="true"
     android:layout_toLeftOf="@+id/niveauMenu"
     android:layout_toStartOf="@+id/niveauMenu"
+    android:id="@+id/rlay"
     android:layout_gravity="center_horizontal">
         <Button
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:id="@+id/retourMenu"
-            android:layout_toLeftOf="@+id/textView8"
-            android:layout_marginRight="100dp"
+            android:layout_alignParentLeft="true"
             android:background="@drawable/fleche"
             android:layout_gravity="center_horizontal" />
     <TextView

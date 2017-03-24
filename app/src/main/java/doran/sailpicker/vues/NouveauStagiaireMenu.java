@@ -1,4 +1,4 @@
-package doran.sailpicker;
+package doran.sailpicker.vues;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import doran.sailpicker.R;
 
 /**
  * Created by doran on 07/02/2017.

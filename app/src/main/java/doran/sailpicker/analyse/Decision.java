@@ -1,4 +1,6 @@
-package doran.sailpicker;
+package doran.sailpicker.analyse;
+
+import doran.sailpicker.meteo.MeteoConverter;
 
 /**
  * Created by doran on 24/01/2017.

@@ -1,23 +1,17 @@
-package doran.sailpicker;
+package doran.sailpicker.vues;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import doran.sailpicker.R;
+import doran.sailpicker.analyse.Decision;
 
 /**
  * Created by doran on 24/01/2017.

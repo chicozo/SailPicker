@@ -1,6 +1,5 @@
-package doran.sailpicker;
+package doran.sailpicker.vues;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +11,10 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
+
+import doran.sailpicker.R;
+import doran.sailpicker.analyse.DecisionNouveauStagiaire;
+
 /**
  * Created by doran on 11/02/2017.
  */

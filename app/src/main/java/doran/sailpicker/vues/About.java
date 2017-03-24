@@ -1,7 +1,9 @@
-package doran.sailpicker;
+package doran.sailpicker.vues;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import doran.sailpicker.R;
 
 /**
  * Created by doran on 02/03/2017.

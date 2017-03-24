@@ -1,4 +1,4 @@
-package doran.sailpicker;
+package doran.sailpicker.meteo;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
