@@ -27,6 +27,20 @@
         <activity android:name=".vues.About" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name=".youtube.YouSail"/>
 
+        <receiver
+            android:name=".Widget.AppWidget"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info" />
+        </receiver>
+
     </application>
 
 </manifest>

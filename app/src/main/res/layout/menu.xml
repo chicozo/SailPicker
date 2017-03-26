@@ -11,6 +11,7 @@
     app:edMenuSize="260dp"
     app:edMenuBackground="#dddddd">
 
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="210dp"
@@ -40,7 +41,7 @@
             android:layout_height="?attr/actionBarSize"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="SailPicker"
-            android:textSize="?attr/actionBarSize"
+            android:textSize="90dp"
             android:id="@+id/title"
             android:textColor="#ECF0F1"
             android:layout_gravity="center_horizontal"
@@ -49,28 +50,24 @@
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
-
-
-
-
 <RelativeLayout
-    android:layout_width="225dp"
-    android:layout_height="255dp"
+    android:layout_width="match_parent"
+    android:layout_height="265dp"
     android:layout_below="@+id/appbarlayout"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
     android:layout_marginTop="38dp"
-    android:background="#FFFF">
+    android:background="#FFFF"
+    >
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_player"
-        android:layout_width="215dp"
-        android:layout_height="225dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="25dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
- />
+        android:layout_marginRight="5dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -121,6 +118,7 @@
 
 
     </RelativeLayout>
+
 </LinearLayout>
 </RelativeLayout>
     <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
@@ -158,6 +156,7 @@
             android:src="@drawable/sun"
             android:id="@+id/animsun"/>
     </RelativeLayout>
+
 
  <ListView
      android:layout_width="match_parent"

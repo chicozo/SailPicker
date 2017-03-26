@@ -201,9 +201,10 @@ public class PremierePage extends YouTubeBaseActivity implements YouTubePlayer.O
    @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
         if(!b) {
-            youTubePlayer.cueVideo("aJWRrwkBYBk"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
+            youTubePlayer.loadVideo("O5NOtL8jKuU"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
         }
     }
+
 
     @Override
     public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
